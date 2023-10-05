@@ -13,6 +13,57 @@ h2 {
     font-size: 1.5em; 
 }
 
+main{
+    float : left;
+    width : 65vw;
+    background-color: hsl(120, 42%, 77%);
+
+}
+aside{
+    float: right;
+    width: 25vw;
+    background-color: hsl(240, 26%, 26%);
+
+}
+footer{
+    clear: both;
+    text-align: center;
+    background-color: hsl(60, 79%, 85%);
+    font-size: .80em;
+}
+.structural {
+    padding: 10px;
+    border: 1px solid #802c2c;
+    margin: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: hsl(43, 86%, 70%);
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+}
+
+
+a:hover {
+    color: #c60faa;
+}
+
+p::before {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#para1{
+    color: rgb(0, 0, 0);
+}
+#para2{
+    color: rgb(54, 10, 109);
+}
+
 
 
 
