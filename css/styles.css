@@ -1,36 +1,43 @@
-/* Student Name: Autar Acharya
+/* 
+   Student Name: Autar Acharya
    Student Number: 8906942
 */
 
 body {
-    font: normal normal normal 16px  Arial, sans-serif;
+    font: normal 16px Arial, sans-serif;
     background-color: hsla(200, 90%, 49%, 0.7);
     height: 100vh;
     width: 100vw;
 }
+
 h2 {
     color: #f00;
-    font-size: 1.5em; 
+    font-size: 1.5em;
 }
 
-main{
-    float : left;
-    width : 65vw;
+main {
+    float: left;
+    width: 65vw;
     background-color: hsl(120, 42%, 77%);
-
+    padding: 10px;
 }
-aside{
+
+aside {
     float: right;
     width: 25vw;
     background-color: hsl(240, 26%, 26%);
-
+    padding: 10px;
 }
-footer{
+
+footer {
     clear: both;
     text-align: center;
     background-color: hsl(60, 79%, 85%);
-    font-size: .80em;
+    font-size: 0.80em;
+    padding: 10px;
 }
+
+
 .structural {
     padding: 10px;
     border: 1px solid #802c2c;
@@ -40,15 +47,15 @@ footer{
 header {
     text-align: center;
     background-color: hsl(43, 86%, 70%);
+    padding: 10px;
 }
 
-.container-grid{
+.container-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 1fr;
 }
 
-
-a:hover {
+ aside a:hover {
     color: #c60faa;
 }
 
@@ -57,14 +64,93 @@ p::before {
     font-size: 14px;
 }
 
-#para1{
+#para1 {
     color: rgb(0, 0, 0);
 }
-#para2{
+
+#para2 {
     color: rgb(54, 10, 109);
 }
 
+h1 {
+    font-size: 30px;
+    color: blueviolet;
+}
 
+nav ul li {
+    display: inline;
+    list-style-type: none;
+}
 
+nav ul li a {
+    border: 2px solid indigo;
+    color: indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 4px;
+}
 
+nav ul li a:hover {
+    border: 2px solid cornsilk;
+    color: cornsilk;
+    background-color: indigo;
+}
 
+select,
+option,
+label,
+legend {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form {
+    border: 5px dashed darkblue;
+    width: 50%;
+    display: block;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+option {
+    width: 50%;
+    display: block;
+    height: 2em;
+}
+
+select,
+option,
+label,
+legend,
+form select>option {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: block;
+}
+
+ form textarea {
+    width: 50%;
+    display: block;
+}
+
+ form fieldset {
+    border: none;
+}
+
+a:hover {
+    color: #f09;
+}
+
+footer p {
+    font-size: 0.75em;
+    clear: both;
+    text-align: center;
+    background-color: hsl(60, 79%, 85%);
+    font-size: 0.80em;
+    color: #ce05ed;
+}
