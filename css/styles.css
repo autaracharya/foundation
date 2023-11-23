@@ -2,69 +2,163 @@
    Student Number: 8906942
 */
 
-body {
-    font: normal normal normal 16px  Arial, sans-serif;
-    background-color: hsla(200, 90%, 49%, 0.7);
-    height: 100vh;
-    width: 100vw;
+html{
+    font : normal normal normal 20px/1.5 Verdana, Arial, Helvetica, sans-serif;
+}
+body
+{
+display: flex;
+flex-direction: column;
+font: normal normal normal 12px/1.5 Verdana, Arial, Helvetica, sans-serif; 
+background-color:hsla(200, 40%, 80%,0.7);
+width: 100vw;
+height: 100vh;
+}
+
+.structural {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+h1{
+
+font-size: 2.5rem;
+color: blueviolet;
 }
 h2 {
-    color: #f00;
-    font-size: 1.5em; 
+     
+    font-size: 2rem; 
+    color: #fc9;
 }
 
+header{
+    text-align: center;
+    background-color: hsl(300, 50%, 50%);
+    flex: 1 10%;
+
+}
+nav ul li{
+    display: inline;
+    list-style-type: none;
+}
+nav ul li a{
+    border: 2px solid indigo;
+    color: indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 1em;
+}
+nav ul li a:hover{
+    border: 2px solid cornsilk;
+    color: cornsilk;
+    background-color: indigo;
+}
+nav {
+    flex: 1 5%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex: 4 8%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
 main{
-    float : left;
-    width : 65vw;
-    background-color: hsl(120, 42%, 77%);
+    
+    background-color: hsl(130, 39%, 58%);
+    flex: 2 1 70%;
+}
+
+aside{
+    
+    background-color: hsl(69, 89%, 57%);
+    flex: 1 2 30%;
 
 }
-aside{
-    float: right;
-    width: 25vw;
-    background-color: hsl(240, 26%, 26%);
+aside ul{
+    list-style: square;
+}
+aside li, a{
+    line-height: 1.5rem;
+    color: rgba(200, 90, 127, .5);
 
+}
+aside a{
+    color: rgba(200, 90, 127, .5);
+}
+aside a  :hover{
+    color: #f09;
 }
 footer{
-    clear: both;
     text-align: center;
-    background-color: hsl(60, 79%, 85%);
-    font-size: .80em;
-}
-.structural {
-    padding: 10px;
-    border: 1px solid #802c2c;
-    margin: 10px;
-}
-
-header {
-    text-align: center;
-    background-color: hsl(43, 86%, 70%);
-}
-
-.container-grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-}
-
-
-a:hover {
-    color: #c60faa;
-}
-
-p::before {
-    margin-right: 10px;
-    font-size: 14px;
+    background-color: hsl(249, 38%, 28%);
+    flex: 1 5%;
 }
 
 #para1{
-    color: rgb(0, 0, 0);
+    color : rgb(219, 60, 7);
+
+
 }
 #para2{
-    color: rgb(54, 10, 109);
+    color : rgb(17, 3, 85);
+}
+form{
+    border: 5px dashed darkblue;
+}
+input[type=text], input[type=email], input[type=submit], select, option{
+display : block;
+width : 50%;
+height: 2em;
+
+}
+select, option, label, legend{
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+textarea {
+    width: 50%;
+    display: block;
+
+}
+fieldset{
+    border: none;
+}
+#gallery{
+
+display : grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+figure{
+    border: 2px solid blue;
 }
 
+img {
+    width  : 80%;
+    height : 80%;
+}
 
+a:hover{
+    color : #f09;
+}
+footer p{
+    font-size : .75em;
 
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 15px;
 
-
+    }
+}
+@media (max-width: 600px){
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
